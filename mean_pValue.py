@@ -268,6 +268,7 @@ if run_btn:
             text=f"Scanning **{ticker}** ({scanned}/{total}) · Found: **{found}** signals")
 
         signal = get_signal(ticker, lookback, end_dt)
+        time.sleep(0.1)
 
         # Apply extra filters from sidebar
         if signal:
@@ -364,4 +365,5 @@ if run_btn:
               <div class="plan-row"><span class="plan-icon">🛑</span><span><b>Exit:</b> Price &lt; 50 DMA <em>and</em> &lt; 200 DMA</span></div>
               <div class="plan-row"><span class="plan-icon">⚠️</span><span><b>Risk:</b> Never risk more than 1–2% of portfolio per trade</span></div>
             </div>
+
             """, unsafe_allow_html=True)
