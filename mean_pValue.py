@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 import scipy.stats as stats
 from datetime import datetime, timedelta
+import time
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -367,3 +368,4 @@ if run_btn:
             </div>
 
             """, unsafe_allow_html=True)
+
